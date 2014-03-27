@@ -9,13 +9,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>This is the title for you homepage - Liam Sykes</title>
+    <title>Blog index - Liam Sykes</title>
     <meta name="author" content="Liam Sykes">
     
     <meta name="description" content="Student, Music Producer, DJ">
     
     <meta name="viewport" content="width=device-width">
-    <link rel="canonical" href="http://sycko.github.io">
+    <link rel="canonical" href="http://sycko.github.io/blog/archives">
     
     <link href="/favicon.png" rel="icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
@@ -50,90 +50,39 @@
     </header>
 
     
-      <div class="hero" style="background-image: url('/images/cliffs_of_moher.jpg');">
-  <div class="grid-wrapper">
-    <div class="grid flex">
-      <div class="grid__item flex__item two-fifths palm-one-whole avatar">
-        <img class="gravatar" src="/images/gravatar.jpg" alt="Liam Sykes's Picture">
-      </div>
-      <div class="grid__item flex__item three-fifths palm-one-whole">
-       <h1>Liam Sykes</h1>
- <hr>
- <p class="lead">
-</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="credit">
-    <p>
-      Glenfinnan, by Liam Sykes
-    </p>
-  </div>
-</div>
-
-    
 
     <div class="grid-wrapper">
       <div class="grid grid-center">
         
-        <div class="grid__item one-whole">
+        <div class="grid__item two-thirds lap-one-whole palm-one-whole">
         
 
           
+<h1 class="title indent">
+  Blog Index
+</h1>
+<hr class="divider">
 
-<div class="grid-wrapper">
-  <div class="grid">
-    <div class="grid__item one-third lap-one-whole palm-one-whole usp">
-      <div class="grid">
-        <div class="grid__item one-whole lap-one-third">
-          <span class="icon">
-            <i class="icon-file"></i>
-          </span>
+
+<div id="archive-list">
+  
+</div>
+
+
+
         </div>
 
-        <div class="grid__item one-whole lap-two-thirds">
-          <h2 class="title">Resume</h2>
-<hr>
-<p>
-A download of my resume, without offline contact information, is availiable below. For a full resume as a PDF, with offline contact information, please <a href='mailto: liam@liamsykes.co.uk'>email me.</a>
-<p>
-<a href="/Resume.pdf">Download Resume</a>
-</p>
-        </div>
-      </div>
-    </div>
+        
+        <aside id="sidebar" class="grid__item one-third lap-one-whole palm-one-whole">
+          <div class="grid">
 
-    <div class="grid__item one-third lap-one-whole palm-one-whole usp">
-      <div class="grid">
-        <div class="grid__item one-whole lap-one-third">
-          <span class="icon">
-            <i class="icon-headphones"></i>
-          </span>
-        </div>
-
-        <div class="grid__item one-whole lap-two-thirds">
-          <h2 class="title">Music</h2>
-<hr>
-<p>
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/41509751&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
-</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid__item one-third lap-one-whole palm-one-whole usp">
-      <div class="grid">
-        <div class="grid__item one-whole lap-one-third">
-          <span class="icon">
-            <i class="icon-comments"></i>
-          </span>
-        </div>
-		 
-        <div class="grid__item one-whole lap-two-thirds">
-         <h2 class="title">Stay connected!</h2>
-<hr>
-
+  
+<section class="social aside-module grid__item one-whole lap-one-half">
+  <h1 class="title delta">
+    Follow me!
+  </h1>
+  <ul class="unstyled">
+    
 
 
 
@@ -145,16 +94,17 @@ A download of my resume, without offline contact information, is availiable belo
 
 <li><a class="soundcloud" href="//soundcloud.com/sycko-1"><i class="icon-cloud"></i> Soundcloud</a></li>
 <li><a class="mixcloud" href="//mixcloud.com/Sycko"><i class="icon-cloud"></i> Mixcloud</a></li>
+  </ul>
+</section>
 
-        </div>
-      </div>
-    </div>
-  </div>
+
+  
+
+
+
 </div>
 
-
-        </div>
-
+        </aside>
         
       </div>
     </div>
@@ -181,6 +131,31 @@ A download of my resume, without offline contact information, is availiable belo
 <script src="//crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 <script defer src="/javascripts/octopress.js"></script>
 
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    if (!window.jXHR){
+      var jxhr = document.createElement('script');
+      jxhr.type = 'text/javascript';
+      jxhr.src = '/javascripts/libs/jXHR.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jxhr, s);
+    }
+
+    github.showRepos({
+      user: 'sycko',
+      count: 0,
+      skip_forks: true,
+      target: '#gh_repos'
+    });
+  });
+</script>
+<script src="/javascripts/github.js"></script>
 
 
 
